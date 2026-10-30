@@ -1,0 +1,1701 @@
+*{     
+     list-style: none;
+     text-decoration: none;
+      margin: 0;
+      padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+body{
+  width: 100%;
+    max-width: 1400px;
+    overflow-x: hidden;   
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* starbucks-header */
+
+.starbucks-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 20px 40px;
+    color: #605f5f;
+
+}
+
+.left-section{
+    display: flex;
+ align-items: center;
+ gap: 30px;
+}
+
+.logo img{
+    height: 55px ;
+    width: 55px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+list-style: none;
+  gap: 25px;
+}
+.menu ul li{
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    color: #167a05;
+
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.location:hover{
+      color: #167a05;
+}
+.sign-in-btn button{
+    border-radius: 50px;
+    padding: 8px 15px;
+    border: 1px solid  #605f5f ;
+        font-weight: bold;
+}
+.sign-in-btn button:hover{
+    background-color:   #dad8d8;
+}
+.join-now-btn button{
+     border-radius: 50px;
+    padding: 8px 15px;
+    border: 1px solid  #605f5f ;
+    font-weight: bold;
+    color: white;
+    background-color: #000000;
+}
+.join-now-btn button:hover{
+    background-color: #605f5f ;
+
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .starbucks-header {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .left-section .menu,
+  .right-section {
+    display: none;
+  }
+}
+
+/* starbucks-order */
+
+
+.starbucks-order{
+    background-color:#32462f ;
+    display: flex;
+    justify-content: center;
+ padding: 32px 0px;
+   
+    }
+
+
+    .starbucks-order p{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .starbucks-order button{
+        color: white;
+        font-weight: bold;
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 8px 10px;
+        margin-left: 30px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+   
+
+/* coffee-box */
+.coffee-box{
+    width: 100%;
+    height: auto    ;
+    display: flex;
+    margin-top: 25px;
+        background-color: #9e0025;
+}
+
+.coffee-text{
+    width: 50%;
+    padding: 80px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.coffee-text h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.coffee-text p{
+    font-size: 22px;
+    color: white;
+    line-height: 34px;
+    margin-bottom: 40px;
+   max-width: 550px;
+}
+
+.coffee-text button{
+    width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+    background: white;
+    color: #32462f;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.coffee-img{
+    width: 50%;
+    
+}
+
+.coffee-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Starbucks-Card{
+    width: 100%;
+
+    display: flex;
+    margin-top: 25px;
+}
+
+
+.card-img{
+     width: 50%;
+    
+}
+.card-img img{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-text {
+      width: 50%;
+    background-color: #006241;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card-text h1{
+      font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.card-text p{
+      font-size: 22px;
+    color: white;
+    line-height: 34px;
+    margin-bottom: 40px;
+  
+}
+.card-text button{
+      width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+    background: transparent; 
+   border:2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.promo-section{
+      width: 100%;
+    
+    display: flex;
+    margin-top: 25px;
+}
+.promo-left{ 
+      width: 50%;
+    background-color: #006241;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.promo-left h1{ 
+     font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.promo-left p{
+      font-size: 22px;
+    color: white;
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+.promo-left button{
+      width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+    background: transparent; 
+   border:1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.promo-right{
+ width: 50%;
+
+}
+.promo-right img{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.hero-section{
+    width: 100%;
+    
+    display: flex;
+    margin-top: 25px;
+}
+.hero-img{
+     width: 50%;
+
+}
+.hero-img img{
+      width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-content{ 
+      width: 50%;
+    background-color: #006241;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content h1{
+  font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.hero-content p{
+      font-size: 22px;
+    color: white;
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+.hero-content button{
+      width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+    background: transparent; 
+   border:1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.collection-section{
+     width: 100%;
+    
+    display: flex;
+    margin-top: 25px;
+}
+.collection-text{
+     width: 50%;
+    background-color:  #9e0025;
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.collection-text h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.collection-text p{
+       font-size: 22px;
+    color: white;
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+.collection-text button{
+       width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+    background: transparent; 
+   border:1px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.collection-img{
+     width: 50%;
+}
+.collection-img img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-section{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+
+.offer-img{
+     width: 50%;
+}
+
+.offer-img img{
+     width: 100%;
+     height: 100%;
+}
+
+
+
+.offer-text{
+      width: 50%;
+    background-color:  #f1f0e4;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.offer-text h1{
+      font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 30px;
+}
+.offer-text p {
+     font-size: 20px;
+    color: black;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.offer-text button{
+      width: fit-content;
+    padding: 7px 15px;
+    border-radius: 40px;
+   border:1px solid  ;
+   background-color: #006241;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.legal-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.legal-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+    .footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 40px;
+    flex-wrap: wrap; 
+     box-sizing: border-box;  
+}
+
+    .footer-box{
+    flex: 1;
+    min-width: 0px;
+}
+    .footer-box h2{
+        font-size: 19px;
+        font-weight: 100;
+         margin: 0;
+          line-height: 1.4;
+         overflow-wrap: break-word;
+
+    }
+      .footer-box ul{
+        padding: 10px 0px ;
+        margin: 0;
+        
+      }
+    .footer-box ul li {
+        font-size: 16px;
+        color: #00000094;
+        list-style: none;
+        padding: 12px 0px;
+         line-height: 1.4;
+    }
+    .footer-box ul li:hover{
+        cursor: pointer;
+        color: #000000;
+
+    }
+
+
+.footer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-arrow {
+  display: none;
+}
+
+
+    .footer-half-line{
+     margin: 0 auto;
+          width: 92%;
+        height: 1.5px;
+        background-color: #dddddd;
+        margin-top: 20px;
+      
+    }
+    
+    .footer-icon{
+        margin-top: 40px;
+       padding: 0px 40px;
+
+    }
+    .footer-icon i{ 
+     font-size: 30px;
+     height: 40px;
+     width: 45px;
+    }
+
+       .footer-content {
+        margin-top: 20px;
+        padding: 0px 40px;
+       }
+   .footer-content p{
+    
+    padding: 13px 0px;
+
+   }
+   .footer-content p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+   }
+
+   .footer-content .tag{
+    color:#605f5f ;
+    font-size: 14px;
+    padding: 40px 0px;
+   }
+    .footer-content .tag:hover{
+        text-decoration: none;
+    }
+
+
+
+
+/* SIGN IN PAGE */
+
+.line{
+     margin: 0 auto;
+          width: 100%;
+        height: 1.5px;
+        background-color: #dddddd;
+        box-shadow: 0 2px 3px rgba(142, 45, 45, 0.15);
+        margin-top: 0px;
+}
+
+.sign-in-header h2{
+    padding: 60px  10px;
+    font-size: 28px;
+    text-align: center;
+    color: #000000DE;
+}
+.sign-in-form{
+ width: 100%;
+ max-width: 500px;
+ margin: 0px auto;
+ padding: 20px 20px;
+ border: 1px solid #ddd;
+ border-radius: 12px;
+ background-color: #fff;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.2) ;
+}
+.sign-in-form p{
+    font-size: 17px;
+  padding: 10px 0px;
+}
+.form-group{
+    margin: 30px 0px;
+
+ 
+}
+.form-group input{ 
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #6c6b6b;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.sign-in-form ::placeholder{
+    color: black;
+    font-weight: 200;
+    font-size: 19px;  
+}
+.sign-in-form p span{
+    color:#006241;
+    font-size: 17px ;
+}
+
+.remember-section {
+    padding: 20px 0px;
+}
+
+.remember-section input{
+    font-size: 15px;
+   
+}
+.remember-section label{
+    font-size: 18px;
+  
+}
+.remember-section label a{
+    color:#006241;
+    font-weight: bold;
+}
+.remember-section label a:hover{
+    text-decoration: none;
+}
+.forgot-links{
+    display: flex;
+    flex-direction: column;
+}
+.forgot-links a{ 
+    color: #006241;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 7px 0px;
+
+}
+.forgot-links a:hover{
+    text-decoration: none;
+}
+ .btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .signin-btn{
+    padding: 18px 24px;
+    color: white;
+    background-color: #006241;
+     border-radius: 40px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 30px 0px;
+ }
+
+
+.Starbucks-rewards{
+  width: 100%;
+ max-width: 400px;
+  
+  margin: 0 auto;
+  text-align: center; 
+  padding: 100px 0;
+}
+
+ .Starbucks-rewards h2{
+    font-size: 18px;
+    color: #006241;
+   margin-bottom: 8px;
+    
+ }
+ .Starbucks-rewards p{
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+   
+ }
+ .rewards-btn{
+    background-color: transparent;
+    border: 1px solid #006241 ;
+    color: #006241;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 30px;
+ }
+
+
+
+
+
+
+ /* JOIN-NOW-PAGE */
+
+ .join-header{
+    text-align: center;
+     padding: 18px  10px;
+   
+}
+.join-header h2{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.join-header h4{
+    font-size: 14px;
+    color: #00000094;
+    padding-bottom: 20px;
+}
+.join-header p{
+    font-size: 14px;
+    color: #00000094;
+    line-height: 20px;
+}
+.join-now-form{
+  width: 100%;
+ max-width: 500px;
+
+ margin: 0px auto;
+ padding: 56px;
+ border: 1px solid #ddd;
+ border-radius: 12px;
+ background-color: #fff;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.2) ;
+ }
+ 
+ .form-section{ 
+    padding: 25px 0 0 0;
+
+ }
+
+ .details-section{
+    padding-bottom: 35px;
+    color: #000000DE;
+
+ } 
+ .details{
+    padding: 8px 0px;
+ }
+  .details p{
+    font-size: 12px;
+   
+    line-height: 15px;
+    
+  }
+ .details-section h2{
+    font-size: 19px;
+    margin: 0 0 8px 0px;
+ }
+ .details-section input{
+      width: 100%;
+    padding: 15px;
+    border: 1px solid #6c6b6b;
+    border-radius: 8px;
+    font-size: 16px;
+}
+ 
+
+
+ .join-page .gift-card-toggle .toggle_btn {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.join-page .card-details {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+.join-page .card-details .details {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+}.join-page .card-details .details input {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+/* Create Account Section */
+.join-page .create-account-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 35px auto 20px;
+    padding: 25px 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}
+
+.join-page .create-account-btn {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    background-color: #00754a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.join-page .create-account-btn:hover {
+    background-color: #006241;
+    box-shadow: 0 3px 8px #0002;
+}
+
+.join-page .terms-text {
+    max-width: 450px;
+    margin: 22px auto 0;
+    color: #555555;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.join-page .terms-text a {
+    color: #00754a;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.join-page .terms-text a:hover {
+    color: #004f36;
+}
+      
+/* Starbucks Rewards Benefits */
+.join-page .rewards-benefits {
+    width: 100%;
+    padding: 55px 30px;
+    margin: 40px 0;
+    box-sizing: border-box;
+    background: #f2f8f4;
+    text-align: center;
+}
+
+.join-page .benefits-header {
+    max-width: 700px;
+    margin: 0 auto 35px;
+}
+
+.join-page .benefits-header h2 {
+    margin: 0 0 12px;
+    color: #1e3932;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.join-page .benefits-header p {
+    margin: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.join-page .benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.join-page .benefit-card {
+    flex: 1;
+    min-width: 0;
+    padding: 30px 22px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+    box-sizing: border-box;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.join-page .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000012;
+}
+
+.join-page .benefit-icon {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.join-page .benefit-card h3 {
+    margin: 0 0 12px;
+    color: #00754a;
+    font-size: 20px;
+}
+
+.join-page .benefit-card p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile sections */
+  .coffee-box,
+  .Starbucks-Card,
+  .promo-section,
+  .hero-section,
+  .collection-section,
+  .offer-section {
+    flex-direction: column;
+  }
+
+  .coffee-text,
+  .coffee-img,
+  .card-img,
+  .card-text,
+  .promo-left,
+  .promo-right,
+  .hero-img,
+  .hero-content,
+  .collection-text,
+  .collection-img,
+  .offer-img,
+  .offer-text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-text,
+  .promo-left,
+  .hero-content,
+  .collection-text,
+  .offer-text,
+  .coffee-text {
+    padding: 40px 20px;
+  }
+
+  .coffee-text {
+    text-align: center;
+  }
+
+  .coffee-text h1,
+  .card-text h1,
+  .promo-left h1,
+  .hero-content h1,
+  .collection-text h1 {
+    font-size: 32px;
+  }
+
+  /* Header: logo and hamburger in one line */
+  .starbucks-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .left-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .left-section .logo img {
+    width: 45px;
+  }
+
+  .hamburger {
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  /* Sliding white menu panel */
+  .left-section .menu {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: white;
+    padding: 90px 25px 25px;
+    box-shadow: -5px 0 15px #0002;
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+  }
+
+  .left-section .menu.show {
+    transform: translateX(0);
+  }
+
+  .left-section .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-section .menu li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+      
+  }
+
+  /* Sign in and Join now */
+  .right-section {
+    display: grid !important;
+     grid-template-columns: max-content max-content;
+  
+    align-items: center;
+      justify-content: start;
+    gap: 12px;
+    position: fixed;
+    top: 230px;
+    right: 0;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+  }
+
+  .right-section .location {
+  grid-column: 1 / -1;
+}
+
+.right-section .sign-in-btn,
+.right-section .join-now-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.right-section .sign-in-btn button,
+.right-section .join-now-btn button {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+  .right-section.show {
+    transform: translateX(0);
+  }
+
+  /* Prevent hidden menu from receiving clicks */
+  .left-section .menu:not(.show),
+  .right-section:not(.show) {
+    pointer-events: none;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .starbucks-order {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px;
+  }
+
+  .starbucks-order p {
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .starbucks-order button {
+    font-size: 12px;
+    padding: 8px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .card-text h1,
+  .promo-left h1,
+  .hero-content h1,
+  .collection-text h1,
+  .offer-text h1,
+  .coffee-text h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .card-text p,
+  .promo-left p,
+  .hero-content p,
+  .collection-text p,
+  .offer-text p,
+  .coffee-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .card-text button,
+  .promo-left button,
+  .hero-content button,
+  .collection-text button,
+  .offer-text button,
+  .coffee-text button {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+  
+
+  .coffee-img,
+  .card-img,
+  .promo-right,
+  .hero-img,
+  .collection-img,
+  .offer-img {
+    order: 1;
+  }
+
+  .coffee-text,
+  .card-text,
+  .promo-left,
+  .hero-content,
+  .collection-text,
+  .offer-text {
+    order: 2;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .legal-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin-top: 20px;
+  }
+
+  .legal-content {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .legal-text {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  /* Footer headings and accordion */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-box {
+    width: 100%;
+    min-width: 0;
+    flex: none;
+    border-bottom: none;
+    padding: 12px 0;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .footer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .footer-box h2,
+  .footer-heading h2 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .footer-arrow {
+    display: block;
+    flex-shrink: 0;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .footer-box ul {
+    display: none;
+    margin-top: 12px;
+    padding: 0;
+  }
+
+  .footer-box ul li {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 7px 0;
+    list-style: none;
+  }
+
+  .footer-box.active ul {
+    display: block;
+  }
+
+  .footer-box.active .footer-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Social media icons */
+  .footer-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 25px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-icon i {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  /* Privacy and other links */
+  .footer-content {
+    margin-top: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .footer-content p {
+    margin: 0;
+    padding: 9px 0;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* Copyright */
+  .footer-content .tag {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 24px 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Legal text */
+  .legal-section {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .legal-content,
+  .legal-extra {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .legal-text {
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Sign-in page mobile layout */
+
+@media (max-width: 768px){
+  
+  .signin-page .sign-in-container {
+    width: calc(100% - 32px);
+    max-width: 100%;
+    margin: 25px auto;
+   padding: 0;
+    box-sizing: border-box;
+  }
+
+  .signin-page .sign-in-header h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .signin-page .sign-in-form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .signin-page .form-group {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .signin-page .form-group input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .signin-page .remember-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .signin-page .remember-section input {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .signin-page .forgot-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .signin-page .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+ .btn-wrapper .signin-btn{
+  font-size: 13px;
+  
+ }
+
+  .signin-page .Starbucks-rewards {
+    width: calc(100% - 32px);
+    margin: 30px auto;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .signin-page .Starbucks-rewards h2 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .signin-page .Starbucks-rewards p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  
+
+  .signin-page .footer-icon {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+/* JOIN NOW PAGE - MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .join-page .join-now-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .join-page .join-header {
+    width: 100%;
+    padding: 25px 0;
+    box-sizing: border-box;
+  }
+
+  .join-page .join-header h2 {
+    font-size: 25px;
+    line-height: 1.35;
+    margin-bottom: 18px;
+  }
+
+  .join-page .join-header h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .join-page .join-header p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .join-page .join-header br {
+    display: none;
+  }
+
+  .join-page .join-now-form,
+  .join-page .join_form,
+  .join-page .form-section,
+  .join-page .details-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .join-page .join_form > p {
+    font-size: 13px;
+  }
+
+  .join-page .details-section {
+    margin-bottom: 28px;
+  }
+
+  .join-page .details-section h2 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .join-page .details {
+    width: 100%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  .join-page .details input {
+    display: block;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .join-page .details p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 8px 0 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* Gift card checkbox and heading */
+  .join-page .gift-card-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0 14px;
+  }
+
+  .join-page #starbucks-toggle {
+    flex-shrink: 0;
+  }
+
+  .join-page .gift-card-toggle .toggle_btn {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .join-page .content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .join-page .content > p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Stack gift card inputs vertically */
+  .join-page .card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .join-page .card-details .details {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .join-page .card-details .details input {
+    width: 100%;
+  }
+
+  /* Create account button and terms */
+  .join-page .create-account-section {
+    width: 100%;
+    margin: 22px auto;
+    padding: 22px 0;
+    box-sizing: border-box;
+  }
+
+  .join-page .create-account-btn {
+    width: 100%;
+    max-width: 260px;
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .join-page .terms-text {
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.6;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
+  /* Rewards benefits cards */
+  .join-page .rewards-benefits {
+    width: 100%;
+    margin: 25px 0;
+    padding: 35px 16px;
+    box-sizing: border-box;
+  }
+
+  .join-page .benefits-header {
+    margin-bottom: 24px;
+  }
+
+  .join-page .benefits-header h2 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .join-page .benefits-header p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .join-page .benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .join-page .benefit-card {
+    width: 100%;
+    padding: 24px 18px;
+    box-sizing: border-box;
+  }
+
+  .join-page .benefit-icon {
+    font-size: 32px;
+  }
+
+  .join-page .benefit-card h3 {
+    font-size: 18px;
+  }
+
+  .join-page .benefit-card p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Footer: keep columns inside the screen */
+  .join-page .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .join-page .footer-box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .join-page .footer-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .join-page .footer-content {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .join-page .footer-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}
+
+

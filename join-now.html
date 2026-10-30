@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join-now</title>
+     <link rel="stylesheet" href="starbucks.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="join-page">  
+     <nav class="starbucks-header">
+       <div class="logo">
+            <img src="starbucks_logo.png" alt="" height="60px " width="60px">
+           </div>
+   </nav>
+   <div class="line"></div>
+
+   <div class="join-now-container">
+    <div class="join-header">
+        <h2>Create an account</h2>
+        <h4>STARBUCKS® REWARDS</h4>
+        <p>Join Starbucks Rewards to earn Stars for free food and drinks, any way you <br> pay. Get access to mobile ordering, a birthday Reward, and more.</p>
+    </div>
+
+    <div class="join-now-form">
+        <form class="join_form">
+        <p><span>*</span> indicates required field</p>
+
+           <div class="form-section">
+          
+            
+        <div class="details-section">
+              <h2>Personal Information</h2>
+               <div class="details">
+               <input type="text" placeholder="*First name" required>
+              </div>
+             <div class="details">
+            <input type="text" placeholder="*Last name" required>
+           </div>
+        </div>  
+                
+        <div class="details-section">
+            <h2>Account Security</h2>
+          <div class="details">
+            <input type="email" placeholder="*Email address" required>
+            <p>This will be your username</p>
+        </div>
+        <div class="details">
+            <input type="password" placeholder="*password" required>
+            <p>Create a password 8 to 25 characters long that includes at least 1 uppercase and 1 lowercase letter, 1 number and 1 special character like an exclamation point or asterisk.</p>
+           </div>
+        </div>
+           
+
+
+           <div class="gift-card-toggle">
+          <input type="checkbox" id="starbucks-toggle" >
+
+        <label for="starbucks-toggle" class="toggle_btn">
+        <span class="text"> Already have a Starbucks gift card?</span>
+        </label>
+        </div>
+
+        <div class="content">
+            <p>Add your gift card to earn Stars when you pay and order ahead.</p>
+            <div class="card-details">
+                <div class="details">
+            <input type="text" placeholder="*Card Number(16 digits)"  maxlength="16" inputmode="numeric" pattern="[0-9]{16}" required>
+
+             <p>No spaces or dashes</p>
+              </div>
+              <div class="details">
+                  <input type="text" placeholder="*Security Code" maxlength="8" inputmode="numeric" pattern="[0-9]{8}" required>
+
+             <p>Scratch to reveal 8-digit code</p>
+              </div>
+
+            </div>
+        </div>
+         
+<!-- Create Account Button -->
+<div class="create-account-section">
+    <button type="submit" class="create-account-btn">
+        Create account
+    </button>
+
+    <p class="terms-text">
+        By creating an account, you agree to Starbucks Rewards
+        <a href="#">Terms of Use</a> and
+        <a href="#">Privacy Notice</a>.
+    </p>
+</div>
+
+        
+
+
+
+        </div>  
+        </form>
+    </div>
+   </div>
+
+<!-- Starbucks Rewards Benefits -->
+<section class="rewards-benefits">
+    <div class="benefits-header">
+        <h2>Make every sip more rewarding</h2>
+        <p>Join Starbucks® Rewards and enjoy more of what you love.</p>
+    </div>
+
+    <div class="benefits-container">
+
+        <div class="benefit-card">
+            <div class="benefit-icon">⭐</div>
+            <h3>Earn Stars</h3>
+            <p>Earn Stars on your purchases and get closer to your favorite rewards.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">☕</div>
+            <h3>Redeem Rewards</h3>
+            <p>Use your Stars to enjoy drinks, food and other favorites.</p>
+        </div>
+
+        <div class="benefit-card">
+            <div class="benefit-icon">🎂</div>
+            <h3>Birthday Reward</h3>
+            <p>Celebrate your birthday with a special treat when eligible.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+   <div class="footer-links">
+    
+<div class="footer-box">
+  <div class="footer-heading" onclick="toggleFooter(this)">
+    <h2>About Us</h2>
+    <span class="footer-arrow">⌄</span>
+  </div>
+  <ul>
+    <li>Our Company</li>
+    <li>Our Coffee</li>
+    <li>About Starbucks</li>
+    <li>Starbucks Archive</li>
+    <li>Investor Relations</li>
+    <li>Customer Service</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
+
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2>Careers</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Culture and Values</li>
+         <li>Belonging at Starbucks</li>
+         <li>College Achievement Plan</li>
+         <li>Alumni Community</li>
+         <li>U.S. Careers</li>
+         <li>International Careers</li>
+    </ul>
+    </div>
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2>Social Impact</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Communities</li>
+         <li>Starbucks Foundation</li>
+         <li>Starbucks Foundation</li>
+         <li>Sustainability</li>
+         <li>Environmental and Social Impact Reporting</li>
+    </ul>
+    </div>
+
+    
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2> For Business Partners</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Landlord Support Center</li>
+         <li>Suppliers</li>
+         <li>Corporate Gift Card Sales</li>
+         <li>Office and Foodservice Coffee</li>
+    </ul>
+    </div>
+
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2> Order and Pick Up</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Order on the App</li>
+         <li>Order on the Web</li>
+         <li>Delivery</li>
+         <li>Order and Pick Up Options</li>
+         <li>Explore and Find Coffee for Home</li>
+    </ul>
+    </div>
+
+</div>
+
+
+<div class="footer-half-line">  </div>
+
+<div class="footer-icon">
+
+ <i class="fa-brands fa-spotify"></i>
+ <i class="fa-brands fa-facebook"></i>
+ <i class="fa-brands fa-pinterest"></i>
+ <i class="fa-brands fa-instagram"></i>
+ <i class="fa-brands fa-youtube"></i>
+ <i class="fa-brands fa-x-twitter"></i>
+</div>
+
+<div class="footer-content">
+ 
+
+  <p>Privacy Notice</p>
+ <p>Consumer Health Privacy Notice</p>
+ <p>Terms of Use</p>
+ <p>Do Not Sell or Share My Personal Information</p>
+ <p>CA Supply Chain Act</p>
+ <p>Accessibility</p>
+ <p>Cookie Preferences</p>
+ 
+ <p class="tag">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+</div>
+
+ </section>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
+

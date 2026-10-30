@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company</title>  
+    <link rel="stylesheet" href="starbucks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+     <nav class="starbucks-header">
+        <div class="left-section">
+           <div class="logo">
+            <img src="starbucks_logo.png" alt="	Starbucks logo">
+           </div>
+           <div class="menu">
+            <ul> 
+                <li> MENU</li>
+                <li>REWARDS</li>
+                <li>GIFT CARDS</li>
+            </ul>
+           </div>
+           </div>
+           <div class="right-section">
+        <div  class="location">
+            <p><i class="fa-solid fa-location-dot"></i> Find a store </p>
+        </div>
+        <div class="sign-in-btn">
+            <a href="sign-in.html">
+            <button>Sign in</button></a>
+        </div>
+        <div class="join-now-btn">
+            <a href="join-now.html">
+        <button>Join now</button></a>
+        </div>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+     </nav>
+ <main>
+     <div class="starbucks-order">
+        <p>It's a great day for coffee </p>
+        <button>Start an order</button>
+     </div>
+     
+
+     
+
+  <div class="coffee-box">
+
+    <div class="coffee-text">
+        <h1>Bring on the merry</h1>
+
+        <p>Festive flavors of spiced gingerbread, rich caramel and sweet peppermint are here to make every moment merrier.</p>
+
+        <button>Order a seasonal treat</button>
+    </div>
+
+    <div class="coffee-img">
+        <img src="coffee.webp" alt="Festive Starbucks coffee">
+    </div>
+
+</div>
+ 
+
+ <div class="Starbucks-Card">
+    <div class="card-img">
+        <img src="Starbucks Card.jpg" alt="Starbucks gift card">
+    </div> 
+ <div class="card-text">
+       <h1>Send holiday joy</h1>
+
+        <p>Share the gift of coffee, festive treats and more with a Starbucks Card. Perfect for anyone on your list.</p>
+
+        <button>Send an eGift</button>
+         </div>
+ </div>
+
+
+
+  
+    <section class="promo-section">
+    <div class="promo-left">
+        <h1>A little bite, a lot of good</h1>
+
+        <p>For every purchase of Crispy Grilled Cheese on Sourdough at participating locations, we'll donate the value of two school meals** to support programs that feed kids. Together we’ll build a brighter future.</p>
+
+        <button>Order now</button>
+    </div>
+
+    <div class="promo-right">
+        <img src="little-bite.jpg" alt="Crispy grilled cheese sandwich">
+        </div>
+    </section>
+ 
+
+
+    <section class="hero-section">
+    <div class="hero-img">
+        <img src="Merrython game.webp" alt="Starbucks for Life Merrython game">
+    </div> 
+ <div class="hero-content">
+       <h1>Starbucks For Life Merrython is here</h1>
+
+        <p>Chase the cheer in the new Starbucks for Life Merrython game. Simply join the fun for a chance to win weekly grand prizes like Starbucks for Life*. First stop: Seattle.</p>
+
+        <button>Play now</button>
+         </div>
+ </section>
+
+
+ 
+    <section class="collection-section">
+    <div class="collection-text">
+        <h1>Our Roller Rabbit collection is here</h1>
+
+        <p>Grab the whimsical, limited-edition drinkware and Starbucks Card at your local coffeehouse. While supplies last.</p>
+
+        <button>learn more</button>
+    </div>
+
+    <div class="collection-img">
+        <img src="roller rabbit.webp" alt="	Starbucks Roller Rabbit collection">
+        </div>
+    </section>
+
+
+
+     <section class="offer-section">
+    <div class="offer-img">
+        <img src="drink.jpg" alt="	Starbucks handcrafted drink">
+    </div> 
+ <div class="offer-text">
+       <h1>Our gift to you</h1>
+
+        <p>Make the season merrier with a <strong>free handcrafted drink</strong>  with purchase. It’s our treat during your first week as a Starbucks® Rewards member.***</p>
+
+        <button>Join now</button>
+         </div>
+ </section>
+ 
+ </main>
+ <section class="legal-section">
+    <div class="legal-content">
+
+          
+<p class="legal-text">
+  *Free refills of hot and iced brewed coffee and tea during same store visit. Excludes Cold Brew,<br>
+  Nitro Cold Brew, Iced Tea Lemonade, flavored Iced Tea and Starbucks Refreshers® base. At <br>
+   participating stores.
+</p>   
+    </div>
+
+    
+
+    <div class="footer-links">
+    
+<div class="footer-box">
+  <div class="footer-heading" onclick="toggleFooter(this)">
+    <h2>About Us</h2>
+    <span class="footer-arrow">⌄</span>
+  </div>
+  <ul>
+    <li>Our Company</li>
+    <li>Our Coffee</li>
+    <li>About Starbucks</li>
+    <li>Starbucks Archive</li>
+    <li>Investor Relations</li>
+    <li>Customer Service</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
+
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2>Careers</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Culture and Values</li>
+         <li>Belonging at Starbucks</li>
+         <li>College Achievement Plan</li>
+         <li>Alumni Community</li>
+         <li>U.S. Careers</li>
+         <li>International Careers</li>
+    </ul>
+    </div>
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2>Social Impact</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Communities</li>
+         <li>Starbucks Foundation</li>
+         <li>Sustainability</li>
+         <li>Environmental and Social Impact Reporting</li>
+    </ul>
+    </div>
+
+    
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2> For Business Partners</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Landlord Support Center</li>
+         <li>Suppliers</li>
+         <li>Corporate Gift Card Sales</li>
+         <li>Office and Foodservice Coffee</li>
+    </ul>
+    </div>
+
+
+    <div class="footer-box">
+         <div class="footer-heading" onclick="toggleFooter(this)">
+      <h2> Order and Pick Up</h2>
+      <span class="footer-arrow">⌄</span>
+       </div>
+    <ul>              
+         <li>Order on the App</li>
+         <li>Order on the Web</li>
+         <li>Delivery</li>
+         <li>Order and Pick Up Options</li>
+         <li>Explore and Find Coffee for Home</li>
+    </ul>
+    </div>
+
+</div>
+
+
+<div class="footer-half-line">  </div>
+
+<div class="footer-icon">
+
+ <i class="fa-brands fa-spotify"></i>
+ <i class="fa-brands fa-facebook"></i>
+ <i class="fa-brands fa-pinterest"></i>
+ <i class="fa-brands fa-instagram"></i>
+ <i class="fa-brands fa-youtube"></i>
+ <i class="fa-brands fa-x-twitter"></i>
+</div>
+
+<div class="footer-content">
+ 
+
+  <p>Privacy Notice</p>
+ <p>Consumer Health Privacy Notice</p>
+ <p>Terms of Use</p>
+ <p>Do Not Sell or Share My Personal Information</p>
+ <p>CA Supply Chain Act</p>
+ <p>Accessibility</p>
+ <p>Cookie Preferences</p>
+ 
+ <p class="tag">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+</div>
+
+ </section>
+
+
+
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
